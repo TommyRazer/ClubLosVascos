@@ -1,64 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="./css/style.css">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+<div class="app">
+  <div class="swiper-container nav">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+    </div>
+  </div>
+  <div class="swiper-container view">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-container content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <div></div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+</div>
 
 <body>
-<ul>
-<ol></ol>
-<ol></ol>
-<ol></ol>
-<ol></ol>
-<ol></ol>
-</ul>
-    <div class="container">
-        <div class="bottom-nav">
 
-            <input type="radio" name="radio" value="1" id="tab-1" />
-            <label class="icon home" for="tab-1">
-                <ion-icon name="home-outline"></ion-icon>
-                <ion-icon class="fill" name="home"></ion-icon>
-            </label>
+  <script>
+    var view = new Swiper('.view', {
+      spaceBetween: 15
+    });
+    var nav = new Swiper('.nav', {
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      touchRatio: 1,
+      centeredSlides: true,
+      slideToClickedSlide: true,
+      onSlideChangeEnd: function () {
+        $('.nav,.bottom,.view').removeClass('active');
+      }
+    });
 
-            <input type="radio" name="radio" value="2" id="tab-2" checked />
-            <label class="icon cart" for="tab-2">
-                <ion-icon name="cart-outline"></ion-icon>
-                <ion-icon class="fill" name="cart"></ion-icon>
-            </label>
+    $('.content').each(function () {
+      var t = $(this),
+        content = new Swiper(t, {
+          scrollbar: t.find('.swiper-scrollbar'),
+          direction: 'vertical',
+          slidesPerView: 'auto',
+          mousewheelControl: true,
+          spaceBetween: 15,
+          freeMode: true,
+          grabCursor: true,
+          onSliderMove: function (swiper) {
+            if (swiper.activeIndex > 0) {
+              $('.nav,.bottom,.view').addClass('active');
+            } else {
+              $('.nav,.bottom,.view').removeClass('active');
+            }
+          },
+          onSlideChangeEnd: function (swiper) {
+            if (swiper.activeIndex > 0) {
+              $('.nav,.bottom,.view').addClass('active');
+            } else {
+              $('.nav,.bottom,.view').removeClass('active');
+            }
+          },
+          onScroll: function (swiper) {
+            if (swiper.activeIndex > 0) {
+              $('.nav,.bottom,.view').addClass('active');
+            } else {
+              $('.nav,.bottom,.view').removeClass('active');
+            }
+          }
+        });
+    })
 
-            <input type="radio" name="radio" value="3" id="tab-3" />
-            <label class="icon fav" for="tab-3">
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon class="fill" name="heart"></ion-icon>
-            </label>
-
-            <input type="radio" name="radio" value="4" id="tab-4" />
-            <label class="icon profile" for="tab-4">
-                <ion-icon name="person-outline"></ion-icon>
-                <ion-icon class="fill" name="person"></ion-icon>
-            </label>
-
-        </div>
-    </div>
-    <script>
-        $('label').on("click",function() {
-  $index = $(this).prevAll().length;
-  
-  if($index === 1) {
-    $('.container').css('background', '#ffa6c3');
-  } else if($index === 3) {
-    $('.container').css('background', '#c988f8');
-  } else if($index === 5) {
-    $('.container').css('background', '#7ce2dd');
-  } else {
-    $('.container').css('background', '#ffd284');
-  }
-});
-    </script>
+    view.params.control = nav;
+    nav.params.control = view;
+  </script>
 </body>
 
 </html>
