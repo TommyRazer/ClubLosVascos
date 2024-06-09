@@ -242,8 +242,34 @@ ul {
 	height: auto;
 	position: absolute;
 	top: 15px;
-	left: 150px;
+	left: 100px;
 
+}
+
+@media (max-width: 425px) {
+	#main-title {
+		position: absolute;
+		left: 150px;
+	}
+}
+@media (max-width: 320px) {
+	#main-title {
+		position: absolute;
+		left: 200px;
+	}
+}
+@media (max-width: 380px) {
+	#main-title {
+		position: absolute;
+		left: 100px;
+	}
+}
+
+@media (max-width: 375px) {
+	#main-title {
+		position: absolute;
+		left: 120px;
+	}
 }
 
 .main {
@@ -257,6 +283,7 @@ ul {
 	top: 10px;
 	left: 20px;
 }
-.card .card{
-	padding:10px;
+
+.card .card {
+	padding: 10px;
 }
