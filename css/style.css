@@ -252,6 +252,12 @@ ul {
 		left: 150px;
 	}
 }
+@media (max-width: 1920px) {
+	#main-title {
+		position: absolute;
+		left: 150px;
+	}
+}
 @media (max-width: 320px) {
 	#main-title {
 		position: absolute;
