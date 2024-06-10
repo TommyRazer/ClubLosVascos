@@ -10,6 +10,8 @@ html {
 	font-family: "Roboto", sans-serif;
 	background-image: url(/img/anastase-maragos-lZzlMYL7Q0Y-unsplash.jpg);
 	background-size: cover;
+	overflow-x: hidden;
+
 }
 
 header {
@@ -295,6 +297,6 @@ ul {
 	left: 20px;
 }
 
-.card .card {
-	padding: 10px;
+.izq .der{
+	padding-left: 50px;
 }
