@@ -10,6 +10,8 @@ html {
 	font-family: "Roboto", sans-serif;
 	background-image: url(/img/anastase-maragos-lZzlMYL7Q0Y-unsplash.jpg);
 	background-size: cover;
+	overflow-x: hidden;
+
 }
 
 header {
@@ -237,16 +239,50 @@ ul {
 }
 
 #main-title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
+	color: #DC5F00;
+	position: absolute;
+	top: 80px;
+	left: 150px;
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
 	font-weight: <weight>;
 	font-style: normal;
 
+}
 
+@media (max-width: 425px) {
+	#main-title {
+		position: absolute;
+		left: 150px;
+	}
+}
+
+@media (max-width: 1920px) {
+	#main-title {
+		position: absolute;
+		left: 210px;
+	}
+}
+
+@media (max-width: 320px) {
+	#main-title {
+		position: absolute;
+		left: 200px;
+	}
+}
+
+@media (max-width: 380px) {
+	#main-title {
+		position: absolute;
+		left: 100px;
+	}
+}
+
+@media (max-width: 375px) {
+	#main-title {
+		position: absolute;
+		left: 140px;
+	}
 }
 
 .main {
@@ -260,6 +296,7 @@ ul {
 	top: 10px;
 	left: 20px;
 }
-.card .card{
-	padding:10px;
+
+.izq .der{
+	padding-left: 50px;
 }

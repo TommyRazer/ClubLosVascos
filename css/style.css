@@ -300,3 +300,8 @@ ul {
 .izq .der{
 	padding-left: 50px;
 }
+summary{
+	color: white;
+	position: absolute;
+	top: 1500px;
+}
