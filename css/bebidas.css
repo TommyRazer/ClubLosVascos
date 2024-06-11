@@ -113,10 +113,7 @@ header {
 	}
 }
 
-j1107.j1108 {
-	color: #2196f3;
-	padding-top: 6px;
-}
+
 
 .j1107 {
 	flex: 1;
@@ -156,6 +153,11 @@ j1107.j1108 {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+}
+.j1110 img{
+	background-color: grey;
+	border-radius:100%;
+	background-size: contain;
 }
 
 .j924 {
