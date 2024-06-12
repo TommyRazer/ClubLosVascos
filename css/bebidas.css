@@ -208,15 +208,21 @@ header {
 }
 
 .card {
+  height: 100%;
+  width: 100%;
   display: flex;
-  background-color: #1a2130a6;
+  flex-direction: column;
+  background-color: #dc5f004f;
   color: white;
 }
 
-ul {
-  width: 100%;
-  display: flex;
-  padding-right: 10px;
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex-grow: 1;
 }
 
 .ul .card {
