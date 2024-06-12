@@ -58,7 +58,7 @@ html {
   .main {
 	padding: 10px;
 	margin-bottom: 30px;
-	margin-top: 120px;
+	margin-top: 60px; /* reduced margin-top from 120px to 60px */
   }
   
   .bottom-nav {
