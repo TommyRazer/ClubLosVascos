@@ -148,7 +148,8 @@ html {
 	flex-direction: column;
 	justify-content: center;
   }
-  .bebidas-imgs{
+  
+  .bebidas-imgs {
 	width: 130px;
   }
   
@@ -207,21 +208,24 @@ html {
 	font-feature-settings: "liga";
   }
   
+  .ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
   .card {
-	flex: 0 0 250px;
-	  /* establece un ancho base de 250px */
-	  margin: 10px;
-	  /* agrega un margen entre las cards */
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: space-between;
-	  width: 300px;
-	  /* establece un ancho específico */
-	  box-sizing: border-box;
-	  /* incluye el padding y el border en el ancho */
+	flex: 0 0 250px; /* establece un ancho base de 250px */
+	margin: 0 auto; /* centra las cards horizontalmente */
+	max-width: 425px; /* establece un ancho máximo de 425px */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 250px; /* establece un ancho específico */
 	background-color: #dc5f0041;
 	color: white;
+	box-sizing: border-box; /* incluye el padding y el border en el ancho */
   }
   
   .card-img-top {
@@ -233,14 +237,9 @@ html {
 	flex-grow: 1;
   }
   
-  .ul .card {
-	padding: 10px;
-  }
   
-  .card-img-top {
-	width: 100%;
-	height: 100px;
-  }
+  
+  
   
   #main-title {
 	color: #dc5f00;
@@ -250,15 +249,16 @@ html {
 	font-optical-sizing: auto;
 	font-weight: weight;
 	font-style: normal;
-	left: 20px; /* moved here to avoid repetition */
+	left: 20px;
+	/* moved here to avoid repetition */
   }
   
   /* combined media queries to reduce duplication */
   @media (max-width: 425px),
-	(max-width: 1920px),
-	(max-width: 320px),
-	(max-width: 380px),
-	(max-width: 375px) {
+  (max-width: 1920px),
+  (max-width: 320px),
+  (max-width: 380px),
+  (max-width: 375px) {
 	#main-title {
 	  position: absolute;
 	  left: 20px;
@@ -276,5 +276,3 @@ html {
 	top: 10px;
 	left: 20px;
   }
-  
-  
