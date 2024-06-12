@@ -148,7 +148,9 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-
+.bebidas-imgs{
+  width: 130px;
+}
 
 .j924 {
   top: 0;
