@@ -262,7 +262,7 @@ ul {
 
 .main {
 	position: absolute;
-	left: -20px;
+	left: -30px;
 }
 
 .icons {
@@ -272,4 +272,6 @@ ul {
 	left: 20px;
 }
 
-
+.text-body-secondary{
+	color: white;
+}
