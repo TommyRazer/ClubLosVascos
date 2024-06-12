@@ -215,14 +215,14 @@ header {
   flex-grow: 1;
 }
 .card {
-  flex: 0 0 300px; /* increased width from 250px to 300px */
-  margin: 10px auto;
-  max-width: 500px; /* increased max-width from 425px to 500px */
+  flex: 0 0 300px;
+  margin: 10px 20px 10px 20px; /* updated margin to move cards to the left */
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 300px; /* increased width from 250px to 300px */
+  width: 300px;
   background-color: #dc5f0041;
   color: white;
   box-sizing: border-box;

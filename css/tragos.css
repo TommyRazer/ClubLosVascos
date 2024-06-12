@@ -58,7 +58,7 @@ html {
   .main {
 	padding: 10px;
 	margin-bottom: 30px;
-	margin-top: 60px; /* reduced margin-top from 120px to 60px */
+	margin-top: 120px;
   }
   
   .bottom-nav {
@@ -211,21 +211,21 @@ html {
   .ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: center; /* added this to center the cards */
+	flex-grow: 1;
   }
-  
   .card {
-	flex: 0 0 250px; /* establece un ancho base de 250px */
-	margin: 0 auto; /* centra las cards horizontalmente */
-	max-width: 425px; /* establece un ancho máximo de 425px */
+	flex: 0 0 300px;
+	margin: 10px 20px 10px 20px; /* updated margin to move cards to the left */
+	max-width: 500px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	width: 250px; /* establece un ancho específico */
+	width: 300px;
 	background-color: #dc5f0041;
 	color: white;
-	box-sizing: border-box; /* incluye el padding y el border en el ancho */
+	box-sizing: border-box;
   }
   
   .card-img-top {
@@ -237,20 +237,16 @@ html {
 	flex-grow: 1;
   }
   
-  
-  
-  
-  
   #main-title {
+	top: 10px;
+	/* sube el título hasta casi tocar el max top */
 	color: #dc5f00;
 	position: absolute;
-	top: 80px;
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
 	font-weight: weight;
 	font-style: normal;
 	left: 20px;
-	/* moved here to avoid repetition */
   }
   
   /* combined media queries to reduce duplication */
@@ -266,8 +262,9 @@ html {
   }
   
   .main {
-	position: absolute;
-	left: -20px;
+	padding: 10px;
+	margin-bottom: 30px;
+	margin-top: 60px; /* reduced margin-top from 120px to 60px */
   }
   
   .icons {
