@@ -211,27 +211,21 @@ header {
 .ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex-grow: 1; /* se ajusta automáticamente al tamaño del contenido */
+  justify-content: center; /* added this to center the cards */
+  flex-grow: 1;
 }
-
 .card {
-  flex: 0 0 250px;
-  /* establece un ancho base de 250px */
-  margin: 0 auto;
-  /* centra las cards horizontalmente */
-  max-width: 425px;
-  /* establece un ancho máximo de 425px */
+  flex: 0 0 300px; /* increased width from 250px to 300px */
+  margin: 10px auto;
+  max-width: 500px; /* increased max-width from 425px to 500px */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 250px;
-  /* establece un ancho específico */
+  width: 300px; /* increased width from 250px to 300px */
   background-color: #dc5f0041;
   color: white;
   box-sizing: border-box;
-  /* incluye el padding y el border en el ancho */
 }
 
 .card-img-top {

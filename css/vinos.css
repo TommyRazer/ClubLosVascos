@@ -215,20 +215,17 @@ header {
 }
 
 .card {
-	flex: 0 0 250px;
-	margin: 10px auto;
-	/* reduced margin from 0 auto to 10px auto */
-	max-width: 425px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 250px;
-	background-color: #dc5f0041;
-	color: white;
-	box-sizing: border-box;
-	background-color: #dc5f0041;
-	color: white;
+  flex: 0 0 300px; /* increased width from 250px to 300px */
+  margin: 10px auto;
+  max-width: 500px; /* increased max-width from 425px to 500px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* increased width from 250px to 300px */
+  background-color: #dc5f0041;
+  color: white;
+  box-sizing: border-box;
 }
 
 .card-img-top {
