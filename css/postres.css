@@ -231,7 +231,7 @@ header {
 }
 
 .card-img-top {
-	height: 150px;
+	height: 230px;
 	object-fit: cover;
 }
 
@@ -251,19 +251,6 @@ header {
 	left: 20px;
 }
 
-.card {
-	flex: 0 0 300px;
-	margin: 10px auto;
-	max-width: 500px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 300px;
-	background-color: #dc5f0041;
-	color: white;
-	box-sizing: border-box;
-}
 
 .card {
 	flex: 0 0 300px;
