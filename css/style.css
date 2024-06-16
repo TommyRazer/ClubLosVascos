@@ -320,3 +320,13 @@ header {
 	top: 10px;
 	left: 20px;
 }
+#pizza-text{
+	color: #dc5f00;
+	
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	display: flex;
+	justify-content: start;
+}
